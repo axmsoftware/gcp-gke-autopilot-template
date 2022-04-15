@@ -1,9 +1,10 @@
-# module "autocloud-service-account" {
-#   source  = "autoclouddev/autocloud-service-account/google"
-#   version = "1.0.0"
-#   # insert the 1 required variable here
-#   project_id = "axm-gke-autopilot-starter"
-# }
+
+module "autocloud-service-account" {
+  source  = "autoclouddev/autocloud-service-account/google"
+  version = "1.0.0"
+  # insert the 1 required variable here
+  project_id = "axm-gke-autopilot-starter"
+}
 # From terraformer
 resource "google_service_account" "axm-gcp-autocloud-sa-read" {
   account_id   = "axm-gcp-autocloud-sa-read"
