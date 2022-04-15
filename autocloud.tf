@@ -34,7 +34,7 @@ resource "google_project_iam_member" "axm-gcp-autocloud-sa-read-service-usage-vi
   project = "axm-gke-autopilot-starter"
   role    = "roles/serviceusage.serviceUsageViewer"
 }
-esource "google_project_iam_member" "axm-gcp-autocloud-sa-read-stackdriver-accounts-viewer" {
+resource "google_project_iam_member" "axm-gcp-autocloud-sa-read-stackdriver-accounts-viewer" {
   member  = "serviceAccount:axm-gcp-autocloud-sa-read@axm-gke-autopilot-starter.iam.gserviceaccount.com"
   project = "axm-gke-autopilot-starter"
   role    = "roles/stackdriver.accounts.viewer"
